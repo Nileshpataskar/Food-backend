@@ -1,10 +1,10 @@
 const { addRecipe_db } = require("../model/addRecipe_schema");
 
 const addRecipe = async (req, res) => {
-  const { userid, recipeTitle } = req.body;
+  const { userid, label } = req.body;
 
   // Check if a recipe with the same title exists for the same user
-  const existingRecipe = await addRecipe_db.findOne({ userid, recipeTitle });
+  const existingRecipe = await addRecipe_db.findOne({ userid, label });
 
   if (existingRecipe) {
     return res
