@@ -5,7 +5,7 @@ const addRecipe_structure = new mongoose.Schema({
   recipeTitle: String,
   recipeDescription: String,
   recipeCategory: String,
-  recipePrepTime: String,
+  recipeSource: String,
   recipeCookTime: String,
   recipeIngredients: String,
   recipeDirections: String,
