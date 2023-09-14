@@ -17,5 +17,4 @@ const fetchComments = async (req, res) => {
     return res.send({ msg: "Comments Fetched", Result: result });
   };
 
-  module.exports={addComment,fetchComments}
-  
+  module.exports={ addComment,fetchComments }
